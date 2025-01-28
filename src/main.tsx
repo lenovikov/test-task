@@ -12,7 +12,7 @@ import { store } from './store/store.ts'
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<Provider store={store}>
-			<BrowserRouter>
+			<BrowserRouter basename='/test-task/'>
 				<App>
 					<Routes>
 						{routes.map(({ route, component }) => (
